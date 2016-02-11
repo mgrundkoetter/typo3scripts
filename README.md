@@ -1,5 +1,5 @@
-# typo3scripts
-Some helper scripts for TYPO3
+# TYPO3 helper scripts.
+Some helper scripts for adding/upgrading TYPO3 source files.
 
 If you have project files in a directory and only need the CMS source files to be added, use the *addT3src.sh* script.
 You can add all required TYPO3 source files and symlinks by using the script and adding the desired TYPO3 version as parameter:

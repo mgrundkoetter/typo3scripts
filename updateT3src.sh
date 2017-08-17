@@ -1,11 +1,11 @@
 #!/bin/bash
 TYPO3_VERSION=$1
 
-TYPO3_FILENAME="typo3_src-${TYPO3_VERSION}.tar.gz"
-DOWNLOAD_LINK="http://prdownloads.sourceforge.net/typo3/${TYPO3_FILENAME}"
+TYPO3_FILENAME="${TYPO3_VERSION}"
+DOWNLOAD_LINK="https://get.typo3.org/${TYPO3_FILENAME}"
 
 echo "Downloading ${TYPO3_FILENAME} ..."
-if wget $DOWNLOAD_LINK
+if wget --no-check-certificate $DOWNLOAD_LINK
 then
 	echo "Extracting ${TYPO3_FILENAME} ..."
 	tar -xzf $TYPO3_FILENAME
